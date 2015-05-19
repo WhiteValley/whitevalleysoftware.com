@@ -1,0 +1,78 @@
+﻿@import '_Settings';
+
+
+label { font-weight: normal; }
+
+
+@media(min-width:768px) {
+    h1, h2 { margin-bottom: 20px; }
+}
+
+// buttons 
+.wv-btn { font-weight: 300; }
+
+// footer
+#footer .section { padding-top: 2em;font-size: 14px; }
+#footer .body { padding-top: 0; }
+
+// wraps
+.wrap-secondary { background-color: $secondary-color; color: $secondary-text-color; }
+
+
+ul.symantic { list-style: none; margin: 0; padding: 0; }
+ul.symantic > li { margin: 0; padding: 0;}
+
+
+ul.contact-details li { display: block; }
+ul.contact-details .fa { margin-right: 1em; }
+@media(min-width:768px) {
+    ul.contact-details li { font-size: 1.3em; }
+}
+
+
+// forms
+.wv-help-block { font-size: 14px; }
+.wv-form-control { background-color: #CEDAE4; border-color: #FAFAFA; }
+
+.wrap-primary .wv-btn { border-color: #fafafa; background-color: #CEDAE4; color: #000; }
+.wrap-primary .wv-help-block { color: $primary-text-color; }
+.wrap-primary .wv-btn-ghost, .primary wv-btn-ghost:hover, 
+.wrap-primary wv-btn-ghost:active, .primary wv-btn-ghost:visited, .primary wv-btn-ghost:focus { background-color: rgba(0, 0, 0, 0); color: #fff; }
+.wrap-primary .wv-btn-ghost:hover, .primary .wv-btn-ghost:focus { color: #ccc; border-color: #ccc; }
+
+.validation-summary-valid { display: none; }
+.field-validation-valid { display: none; }
+.form-group { margin-bottom: 30px; }
+.form-action { margin-top: 50px; }
+.input-lg { font-size: 18px; }
+.input-validation-error { border-color: #98334a; }
+.validation-summary-errors, .field-validation-error { color: #98334a; }
+.validation-summary-errors ul { list-style: none; background-color: #CEDAE4; padding: 10px; margin: 10px 0 30px 0;}
+.form-privacy { margin: 20px 0;}
+
+
+// quotes
+blockquote,
+.blockquote-reverse, 
+blockquote.pull-right { border: 0; }
+.blockquote-reverse footer:after,
+blockquote.pull-right footer:after,
+.blockquote-reverse small:after,
+blockquote.pull-right small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right .small:after { content: none; }
+
+.wrap-primary blockquote footer { color: #cacaca; }
+
+
+// summary box
+.summary-box { margin: 10vh 0; text-align:center; }
+.summary-box h1 { font-size: 24px; }
+.summary-box .icon { 
+    background-color: $primary-color; color: $primary-text-color; display:inline-block; height:100px;
+    width:100px; border-radius: 50%; font-size: 50px; line-height: 100px; 
+}
+
+
+
+.icon-list .fa { margin-right: 10px; }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="98.296875"
+   height="71.053574"
+   id="svg3005">
+  <defs
+     id="defs3007" />
+  <metadata
+     id="metadata3010">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-1.382812,-2.308612)"
+     id="layer1"
+     style="display:inline">
+    <g
+       transform="translate(-45.4375,-71.882498)"
+       id="flowRoot3015"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Britannic Bold;-inkscape-font-specification:Britannic Bold">
+      <path
+         d="m 143.11719,74.369681 -23.27344,70.874999 -3.54464,0 L 97.355194,74.380514 110.84375,74.369681 121.67188,115.99468 134.75,74.369681 z"
+         id="path3792"
+         style="font-size:144px;fill:#ffffff;fill-opacity:0.94117647" />
+    </g>
+  </g>
+  <g
+     transform="translate(-1.382812,-2.308612)"
+     id="layer3"
+     style="display:inline">
+    <path
+       d="m 67,73.362183 -6.90625,-10e-7 -9.632813,-35.92969 -9.5625,35.92969 -16.242187,0 -23.273438,-70.8749994 26.789063,0 L 40.6875,44.112182 49.625,7.1121826 C 54.82273,29.889398 67,73.362183 67,73.362183 z"
+       id="path3792-1"
+       style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Britannic Bold;-inkscape-font-specification:Britannic Bold" />
+  </g>
+</svg>
