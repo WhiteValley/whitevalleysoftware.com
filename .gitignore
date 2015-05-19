@@ -1,0 +1,7 @@
+.nuget
+bin
+obj
+*.user
+*.suo
+packages
+/properties/PublishProfiles/*
