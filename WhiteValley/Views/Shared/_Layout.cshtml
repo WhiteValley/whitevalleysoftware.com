@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @RenderSection("Meta", false)
+    <title>@Page.Title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,400' rel='stylesheet' type='text/css'>
+    @*<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">*@
+    <link href="/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/content/animate.min.css" rel="stylesheet">@* no common recommended cdn for animate.css *@
+    @Html.InlineStyle("theme-inline.min.css")
+    @Html.StyleWithVersion("theme.min.css")
+    @RenderSection("Styles", false)
+
+    @* basic icon support for multiple platforms, doesn't include windows phone explicitly or < IE11
+        but there is a favicon.ico file in the root containing 16, 32, and 48px images *@
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon152x152.png">
+    <link rel="icon" href="/images/favicon96x96.png" sizes="96x96">
+
+    @RenderSection("Head", false)
+    
+    @* To collect end-user usage analytics about your application, insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag, and before any other scripts. Your first data will appear automatically in just a few seconds.*@
+    @if (!String.IsNullOrEmpty(WhiteValley.AppInsights.AppInsightsSettingsHelper.AppInsightsIKey))
+    { 
+        <script type="text/javascript">
+            var appInsights = window.appInsights || function (config) {
+                function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+            }({ instrumentationKey: "@WhiteValley.AppInsights.AppInsightsSettingsHelper.AppInsightsIKey" });
+            window.appInsights = appInsights;
+            appInsights.trackPageView();
+        </script>
+    }
+</head>
+<body id="body" class="">
+    <div id="navigation" class="">
+        <nav class="navbar navbar-default navbar-fixed-top menubar" role="navigation" data-0="background-color:rgba(49,101,148,0)" data-200="background-color:rgba(49,101,148,1)" data-anchor-target="#skrollr-body">
+            <div class="container">
+
+                <a href="/" class="navbar-brand brand" title="White Valley Software">
+                    <img class="logo" src="/images/whitevalley-logo.svg" alt="Logo of White Valley Software" />White Valley <span class="hidden-xs">Software</span>
+                </a>
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/work/" title="View some of our work">WORK</a></li>
+                        <li><a href="/contact/" title="Get in touch with White Valley Software">CONTACT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div id="skrollr-body">
+        @RenderBody()
+
+        <section id="footer" class="wrap wrap-primary">
+            <div class="section shrink">
+                <div class="auto-scroll scroll-up scroll-link"><a href="#body" class="animated"><span class="fa fa-angle-up"></span></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <article class="body centertext">
+                                <p>&copy; White Valley Software @DateTime.UtcNow.ToString("yyyy") | <a href="/privacy-policy/" title="Privacy policy of White Valley Software">privacy policy</a></p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/scripts/skrollr.min.js"></script>
+    @*<script src="/scripts/default-inline.js"></script>*@
+    @RenderSection("Scripts", false)
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-19325368-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <!-- AppVersion: @WhiteValley.Helpers.AppSettingsHelper.AppVersion -->
+</body>
+</html>

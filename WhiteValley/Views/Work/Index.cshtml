@@ -1,0 +1,76 @@
+﻿@{
+    Page.Title = "Showcase";
+}
+@section Meta {
+    <meta name="description" content="A showcase of some of the websites and projects that White Valley have been working on" />
+}
+@section Styles
+{
+    <style type="text/css">
+        /*#header .bg { background-image: url('/images/work/intrinsys/intrinsys-screenshot-header.png'); }*/
+    </style>
+}
+
+<section id="header" class="wrap wrap-primary header header-slim">
+    <div @*class="bg" data-0="background-position: 50% 70px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#header"*@>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <article class="content centertext">
+                        <h1>SHOWCASE</h1>
+                        <p>Here's a sample of some of the things we've been working on</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="intro" class="wrap">
+    <div class="container">
+        <div class="showcase">
+            <article class="box bg" style="background-image:url(/images/work/intrinsys-thumbnail.png)">
+                <a class="veil" href="http://www.intrinsys.com">
+                    <h1>Intrinsys</h1>
+                </a>
+            </article>
+            <article class="box bg" style="background-image:url(/images/work/atlantis-thumbnail.png)">
+                <a class="veil" href="http://www.atlantisplumbing.co.uk">
+                    <h1>Atlantis Plumbing</h1>
+                </a>
+            </article>
+            <article class="box bg" style="background-image:url(/images/work/integralp-thumbnail.png)">
+                <a class="veil" href="http://www.integralp.com">
+                    <h1>Integral Powertrain</h1>
+                </a>
+            </article>
+            <article class="box bg" style="background-image:url(/images/work/catiauser-thumbnail.png)">
+                <a class="veil" href="http://www.catiauser.org">
+                    <h1>Catia User</h1>
+                </a>
+            </article>
+            <article class="box bg" style="background-image:url(/images/work/midasfea-thumbnail.png)">
+                <a class="veil" href="http://www.midasfea.com">
+                    <h1>Midas FEA</h1>
+                </a>
+            </article>
+            <article class="box bg">
+                <a class="veil" href="/contact/">
+                    <h1>Your Next Project?</h1>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+@section Scripts
+{
+    @*<script type="text/javascript" src="/scripts/skrollr.min.js"></script>*@
+    @*<script type="text/javascript">
+        $(function () {
+            if ($(window).width() >= 768) {
+                skrollr.init(); @* disable skrollr on 'mobile' *@@*
+            }
+        });
+    </script>*@
+}
