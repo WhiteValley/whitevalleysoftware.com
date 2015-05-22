@@ -93,14 +93,53 @@ ul.contact-details .fa {
 .form-privacy {
   margin: 20px 0; }
 
+/* blockquote bootstrap resets */
+blockquote {
+  font-size: 16px;
+  padding: 0; }
+
 blockquote, .blockquote-reverse, blockquote.pull-right {
   border: 0; }
 
 .blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after, blockquote.pull-right .small:after {
   content: none; }
 
+blockquote > footer {
+  text-align: right; }
+
 .wrap-primary blockquote footer {
   color: #cacaca; }
+
+.wrap-primary blockquote footer a, .wrap-primary blockquote footer a:visited, .wrap-primary blockquote footer a:active, .wrap-primary blockquote footer a:focus {
+  color: #cacaca; }
+
+.wrap-primary blockquote footer a:hover {
+  color: #fafafa; }
+
+@media (min-width: 768px) {
+  blockquote {
+    font-size: 18px; }
+ }
+
+/* tweets */
+.tweet {
+  padding: 10px; }
+
+@media (min-width: 768px) {
+  .tweet {
+    margin-top: 40px; }
+
+  .tweet blockquote {
+    position: relative;
+    padding: 0 0 0 45px; }
+
+  .tweet blockquote .fa.fa-twitter {
+    font-size: 32px;
+    position: absolute;
+    margin-right: 10px;
+    top: 0;
+    left: 0; }
+ }
 
 .summary-box {
   margin: 10vh 0;
