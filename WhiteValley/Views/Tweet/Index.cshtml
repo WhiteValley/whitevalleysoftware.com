@@ -1,0 +1,35 @@
+﻿@model WhiteValley.ViewModels.TweetViewModel
+<div class="row">
+    @if (Model.Tweets.Any())
+    {
+        for (var i = 0; i < Model.Tweets.Count && i < 3; i++)
+        {
+            var tweet = Model.Tweets[i];
+            <div class="col-sm-4 col-xs-12">
+                <div class="tweet">
+                    <blockquote>
+                        <p><span class="fa fa-twitter"></span>@tweet.Html</p>
+                        <footer>White Valley - <a href="@tweet.TweetUrl" title="">@@whitevalleysoft</a></footer>
+                    </blockquote>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        for (var i = 0; i < 3; i++)
+        {
+            <div class="col-sm-4 col-xs-12">
+                <div class="tweet">
+                    <blockquote>
+                        <p>
+                            <span class="fa fa-twitter"></span>Oh dear! It appears we can't access twitter at the moment to show you what we've been talking about.
+                            If you're interested then <a href="https://twitter.com/whitevalleysoft" title="View White Valley Software tweets">view our twitter page</a>
+                        </p>
+                        <footer>White Valley - <a href="https://twitter.com/whitevalleysoft" title="">@@whitevalleysoft</a></footer>
+                    </blockquote>
+                </div>
+            </div>
+        }
+    }
+</div>

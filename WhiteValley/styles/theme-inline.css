@@ -23,6 +23,9 @@ img {
 .centertext {
   text-align: center; }
 
+.fa {
+  margin-right: 8px; }
+
 @media (min-width: 768px) {
   body {
     font-size: 18px; }
