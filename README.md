@@ -11,6 +11,6 @@ The theme is copyright White Valley Software. Feel free to fork and use the code
 
 .NET 4.5 running on IIS. Visual Studio 2013.
 
-## Issues or a typos
+## Issues or typos
 
 If you find a typo or an issue with our website please let us know via the [issue tracker](https://github.com/WhiteValley/whitevalleysoftware.com/issues). Or even better, send us a pull request :-)
